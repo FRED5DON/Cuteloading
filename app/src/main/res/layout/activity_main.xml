@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.freddon.android.app.cuteloading.CirclePlayBar
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:cpb_background_progressbar_color="#F45B4F"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="52"
+            app:cpb_progress_loading="66"
+            app:cpb_progressbar_color="#F45B4D"
+            app:cpb_progressbar_width="4dp"
+            app:state="loading" />
+
+        <com.freddon.android.app.cuteloading.CirclePlayBar
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:cpb_background_progressbar_color="#F45B4F"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="52"
+            app:cpb_progress_loading="75"
+            app:cpb_progressbar_color="#F45B4D"
+            app:cpb_progressbar_width="4dp"
+            app:state="stop" />
+
+        <com.freddon.android.app.cuteloading.CirclePlayBar
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:cpb_background_progressbar_color="#F45B4F"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="75"
+            app:cpb_progress_loading="75"
+            app:cpb_progressbar_color="#F45B4D"
+            app:cpb_progressbar_width="4dp"
+            app:state="pause" />
+
+        <com.freddon.android.app.cuteloading.CirclePlayBar
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:cpb_background_progressbar_color="#F45B4F"
+            app:cpb_background_progressbar_width="2dp"
+            app:cpb_progress="75"
+            app:cpb_progress_loading="75"
+            app:cpb_progressbar_color="#F45B4D"
+            app:cpb_progressbar_width="4dp"
+            app:state="release" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.freddon.android.app.cuteloading.CircleLoading
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:cl_ball_color="#F45B4D"
+            app:cl_ball_radius="4dp"
+            app:cl_line_color="#F45B4F"
+            app:cl_line_width="2dp"
+            app:cl_progress="20" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/vector_loading" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@anim/animate_v_loading"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
